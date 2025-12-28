@@ -1,4 +1,4 @@
-# Ex.06 Book Front Cover Page Design
+# Ex.05 Book Front Cover Page Design
 ## Date:
 
 ## AIM:
@@ -31,9 +31,62 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 ## PROGRAM:
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bookcover</title>
+    <style>
+        body{
+            font-family:Arial;
+            background-color:bisque;
+            text-align:center;
+        }
+        .cover{
+            width: 600px;
+            height:850px;
+            margin:50px auto;
+            background:url("book cover.jpeg")center/cover no-repeat;
+            padding: 40px;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+            position:relative;
+        }
+        .footer{
+            display:flex;
+            justify-content:space-between;
+            border-top: 3px solid rgb(108, 32, 135);
+        }
+        .photo{
+            position:absolute;
+            width:150px;
+            right:50px;
+            bottom:100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <div>
+            <h1 style="color:aqua;font-size:50px">Mastering python program</h1>
+            <h2 style="color:blueviolet;font-size:20px">a simple guide to master your programming skill</h2>
+        </div>
+        <div class="footer">
+            <h3 style="color:black">python</h3>
+            <h3 style="color:black">sk</h3>
+        </div>
+        <img src="sk.jpeg" class="photo">
+        <img src="pylogo.webp" class="logoimg">
+    </div>
+    
+</body>
+</html>
+```
 
 ## OUTPUT:
+![WhatsApp Image 2025-12-28 at 13 41 58_ec6aa1e1](https://github.com/user-attachments/assets/8f056346-82c3-4dc8-b32f-4f896ac452e3)
 
 
 ## RESULT:
